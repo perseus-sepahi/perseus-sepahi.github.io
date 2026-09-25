@@ -1,0 +1,16 @@
+{
+  "name": "perseus-sepahi-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Personal website: software, apps and papers. Zero dependencies.",
+  "scripts": {
+    "studio": "node scripts/studio.js",
+    "build": "node build.js",
+    "serve": "node build.js && python3 -m http.server 8080 --directory dist",
+    "figure": "node scripts/simulate-kh.js --re 500 --pr 0.71 --ri 0.07 --t-end 55 --save 55 --window 5.6 --out lib/figure-data/kh-billows.json",
+    "deploy:uw": "./scripts/deploy-uwaterloo.sh"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

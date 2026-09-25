@@ -1,0 +1,5 @@
+dist/
+dist-uw/
+.DS_Store
+node_modules/
+READINESS.md

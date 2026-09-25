@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio · Perseus Sepahi</title>
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/studio/studio.css">
+</head>
+<body class="studio">
+
+<header class="studio-head">
+  <span class="studio-mark">Studio</span>
+  <nav class="tabs" id="tabs">
+    <button class="tab-link" data-tab="apps" aria-current="page">Software</button>
+    <button class="tab-link" data-tab="cv">CV</button>
+    <button class="tab-link" data-tab="profile">Profile &amp; site</button>
+    <button class="tab-link" data-tab="publish">Publish</button>
+  </nav>
+  <div class="head-actions">
+    <a class="ghost" href="/" target="_blank" rel="noopener">View site</a>
+  </div>
+</header>
+
+<main>
+  <!-- ---------------- Software ---------------- -->
+  <section class="panel" data-panel="apps">
+    <aside class="sidebar">
+      <button class="btn primary block" id="new-app">New application</button>
+      <ul class="app-list" id="app-list"></ul>
+      <p class="hint" id="app-count"></p>
+    </aside>
+
+    <form class="editor" id="app-form" autocomplete="off">
+      <div class="editor-head">
+        <h1 class="editor-title" id="editor-title">New application</h1>
+        <p class="hint" id="editor-url"></p>
+      </div>
+
+      <div class="grid-2">
+        <label class="field"><span>Name</span><input name="name" required placeholder="Chisel"></label>
+        <label class="field"><span>Web address</span><input name="slug" required pattern="[a-z0-9][a-z0-9\-]*" placeholder="chisel"></label>
+      </div>
+
+      <label class="field"><span>One-line summary</span>
+        <input name="tagline" placeholder="Text-to-CAD for engineers: describe a part, get a solid.">
+      </label>
+
+      <fieldset class="field">
+        <legend>Platforms</legend>
+        <div class="checks" id="platforms"></div>
+        <input name="platformsExtra" placeholder="Other platforms, separated by commas">
+      </fieldset>
+
+      <div class="grid-3">
+        <label class="field"><span>Status</span>
+          <select name="status">
+            <option value="stable">Stable</option>
+            <option value="beta" selected>Beta</option>
+            <option value="experimental">Experimental</option>
+          </select>
+        </label>
+        <label class="field"><span>Year</span><input name="year" type="number" min="1990" max="2100"></label>
+        <label class="field"><span>Position in the list</span><input name="order" type="number" min="1" max="99"></label>
+      </div>
+
+      <label class="check-line"><input type="checkbox" name="featured"> <span>Show on the home page</span></label>
+
+      <label class="field"><span>Description</span>
+        <textarea name="description" rows="6" placeholder="What it does, and what makes it different. Leave a blank line between paragraphs."></textarea>
+      </label>
+
+      <label class="field"><span>Features, one per line</span>
+        <textarea name="features" rows="6" placeholder="Reads EPUB, PDF and plain text&#10;Works entirely offline"></textarea>
+      </label>
+
+      <div class="grid-2">
+        <label class="field"><span>Built with, separated by commas</span><input name="tech" placeholder="SwiftUI, OpenFOAM"></label>
+        <label class="field"><span>Topics, separated by commas</span><input name="tags" placeholder="CAD, Simulation"></label>
+      </div>
+
+      <fieldset class="field">
+        <legend>Downloads</legend>
+        <p class="hint">Leave the address empty to show “coming soon”. With a releases repository set below, it points at the newest release instead.</p>
+        <div class="rows" id="downloads"></div>
+        <button type="button" class="btn small" data-add="download">Add a download</button>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>Other links</legend>
+        <div class="rows" id="links"></div>
+        <button type="button" class="btn small" data-add="link">Add a link</button>
+      </fieldset>
+
+      <label class="field"><span>GitHub releases repository</span>
+        <input name="releases" placeholder="yourname/chisel-app">
+      </label>
+
+      <fieldset class="field">
+        <legend>Icon</legend>
+        <div class="icon-row">
+          <div class="drop" id="icon-drop" tabindex="0" role="button" aria-label="Choose an icon image">
+            <img id="icon-preview" alt="" hidden>
+            <span class="drop-hint" id="icon-hint">Drop a PNG here, or click to choose</span>
+          </div>
+          <div class="icon-side">
+            <label class="field"><span>Shape</span>
+              <select name="iconShape">
+                <option value="macos">Mac icon, already shaped</option>
+                <option value="ios">Rounded square</option>
+                <option value="watch">Circle</option>
+              </select>
+            </label>
+            <p class="hint" id="icon-note">The shape is detected from the image when you drop it in.</p>
+          </div>
+        </div>
+        <input type="file" id="icon-file" accept="image/png,image/jpeg,image/webp" hidden>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>Screenshots</legend>
+        <div class="shots-grid" id="shots"></div>
+        <button type="button" class="btn small" id="add-shot">Add screenshots</button>
+        <input type="file" id="shot-file" accept="image/png,image/jpeg,image/webp" multiple hidden>
+      </fieldset>
+
+      <div class="editor-actions">
+        <button type="submit" class="btn primary">Save</button>
+        <a class="btn" id="open-page" href="#" target="_blank" rel="noopener">Open the page</a>
+        <button type="button" class="btn danger" id="delete-app">Delete</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- ---------------- CV ---------------- -->
+  <section class="panel single" data-panel="cv" hidden>
+    <form class="editor" id="cv-form" autocomplete="off">
+      <div class="editor-head">
+        <h1 class="editor-title">Curriculum vitae</h1>
+        <p class="hint">Every field is blank until you fill it. Empty entries are left out of the page.</p>
+      </div>
+
+      <fieldset class="field">
+        <legend>PDF</legend>
+        <p class="hint" id="cv-pdf-path"></p>
+        <button type="button" class="btn small" id="cv-pdf-btn">Replace the PDF</button>
+        <input type="file" id="cv-pdf-file" accept="application/pdf" hidden>
+      </fieldset>
+
+      <div id="cv-sections"></div>
+      <button type="button" class="btn small" id="add-section">Add a section</button>
+
+      <div class="editor-actions">
+        <button type="submit" class="btn primary">Save</button>
+        <a class="btn" href="/cv/" target="_blank" rel="noopener">Open the page</a>
+      </div>
+    </form>
+  </section>
+
+  <!-- ---------------- Profile & site ---------------- -->
+  <section class="panel single" data-panel="profile" hidden>
+    <form class="editor" id="profile-form" autocomplete="off">
+      <div class="editor-head">
+        <h1 class="editor-title">Profile &amp; site</h1>
+        <p class="hint">The words on the home page, and the addresses the site links to.</p>
+      </div>
+
+      <div class="grid-2">
+        <label class="field"><span>Name shown on the site</span><input name="authorName"></label>
+        <label class="field"><span>Full legal name</span><input name="legalName"></label>
+        <label class="field"><span>Department</span><input name="department"></label>
+        <label class="field"><span>Institution</span><input name="affiliation"></label>
+        <label class="field"><span>Email</span><input name="email" type="email"></label>
+        <label class="field"><span>Location</span><input name="location"></label>
+      </div>
+
+      <label class="field"><span>Headline</span><input name="headline"></label>
+      <label class="field"><span>About, blank line between paragraphs</span><textarea name="bio" rows="7"></textarea></label>
+      <label class="field"><span>Now</span><textarea name="nowText" rows="2"></textarea></label>
+      <div class="grid-2">
+        <label class="field"><span>Interests, one per line</span><textarea name="interests" rows="5"></textarea></label>
+        <label class="field"><span>Tools, separated by commas</span><textarea name="skills" rows="5"></textarea></label>
+      </div>
+
+      <fieldset class="field">
+        <legend>Links</legend>
+        <div class="grid-2">
+          <label class="field"><span>GitHub</span><input name="link_github" placeholder="https://github.com/yourname"></label>
+          <label class="field"><span>Google Scholar</span><input name="link_scholar"></label>
+          <label class="field"><span>LinkedIn</span><input name="link_linkedin"></label>
+          <label class="field"><span>ResearchGate</span><input name="link_researchgate"></label>
+          <label class="field"><span>ORCID</span><input name="link_orcid"></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>Addresses</legend>
+        <div class="grid-2">
+          <label class="field"><span>Site address</span><input name="url" placeholder="https://yourname.github.io"></label>
+          <label class="field"><span>Custom domain, if you have one</span><input name="customDomain" placeholder="yourname.dev"></label>
+        </div>
+        <p class="hint">The site address is used for links in the feed, the sitemap and social previews.</p>
+      </fieldset>
+
+      <div class="editor-actions">
+        <button type="submit" class="btn primary">Save</button>
+        <a class="btn" href="/" target="_blank" rel="noopener">Open the home page</a>
+      </div>
+    </form>
+  </section>
+
+  <!-- ---------------- Publish ---------------- -->
+  <section class="panel single" data-panel="publish" hidden>
+    <div class="editor">
+      <div class="editor-head">
+        <h1 class="editor-title">Publish</h1>
+        <p class="hint">Publishing sends the site to GitHub. GitHub Pages and Cloudflare Pages both rebuild on their own from there.</p>
+      </div>
+
+      <dl class="status-grid" id="git-status"></dl>
+
+      <div id="publish-ready" hidden>
+        <label class="field"><span>What changed</span><input id="commit-message" placeholder="Add Chisel"></label>
+        <div class="editor-actions">
+          <button type="button" class="btn primary" id="publish-btn">Publish now</button>
+        </div>
+      </div>
+
+      <div id="publish-setup" hidden>
+        <h2 class="subhead">First time: connect GitHub</h2>
+        <p class="hint">Create a free account at github.com first, then type the username you chose here. Run the commands in Terminal; the first one opens your browser to sign in.</p>
+        <label class="field"><span>Your GitHub username</span><input id="gh-user" placeholder="perseussepahi" autocomplete="off"></label>
+        <pre class="cmd"><code id="setup-commands"></code></pre>
+        <p class="hint">The repository must be named exactly <code>username.github.io</code> for the site to appear at that address.</p>
+      </div>
+
+      <pre class="log" id="publish-log" hidden></pre>
+    </div>
+  </section>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="/studio/studio.js" defer></script>
+</body>
+</html>

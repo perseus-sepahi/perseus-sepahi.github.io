@@ -1,0 +1,108 @@
+{
+  "pdf": "assets/files/Perseus_Sepahi_CV.pdf",
+  "sections": [
+    {
+      "title": "Education",
+      "items": [
+        {
+          "title": "",
+          "org": "",
+          "period": "",
+          "detail": ""
+        },
+        {
+          "title": "",
+          "org": "",
+          "period": "",
+          "detail": ""
+        },
+        {
+          "title": "",
+          "org": "",
+          "period": "",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "title": "Experience",
+      "items": [
+        {
+          "title": "",
+          "org": "",
+          "period": "",
+          "detail": ""
+        },
+        {
+          "title": "",
+          "org": "",
+          "period": "",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "title": "Teaching",
+      "items": [
+        {
+          "title": "",
+          "org": "",
+          "period": "",
+          "detail": ""
+        },
+        {
+          "title": "",
+          "org": "",
+          "period": "",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "title": "Awards",
+      "items": [
+        {
+          "title": "",
+          "org": "",
+          "period": "",
+          "detail": ""
+        },
+        {
+          "title": "",
+          "org": "",
+          "period": "",
+          "detail": ""
+        },
+        {
+          "title": "",
+          "org": "",
+          "period": "",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "title": "Skills",
+      "items": [
+        {
+          "title": "",
+          "org": "",
+          "period": "",
+          "detail": ""
+        },
+        {
+          "title": "",
+          "org": "",
+          "period": "",
+          "detail": ""
+        },
+        {
+          "title": "",
+          "org": "",
+          "period": "",
+          "detail": ""
+        }
+      ]
+    }
+  ]
+}

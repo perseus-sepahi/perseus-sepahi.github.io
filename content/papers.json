@@ -1,0 +1,122 @@
+[
+  {
+    "id": "sepahi2026thesis",
+    "type": "thesis",
+    "title": "Stratification and Vertical Turbulence Structure in the Atmospheric Boundary Layer: A Large-Eddy Simulation Study",
+    "authors": [
+      "Perseus Sepahi"
+    ],
+    "venue": "Master of Mathematics thesis, Department of Applied Mathematics, University of Waterloo",
+    "year": 2026,
+    "pdf": "",
+    "links": [],
+    "tags": [
+      "WRF-LES",
+      "Stable boundary layer",
+      "Turbulence"
+    ],
+    "abstract": "The stably stratified atmospheric boundary layer forms over land at night as the surface cools, and the buoyant suppression of turbulence makes it one of the hardest parts of the atmosphere to observe, simulate and parameterise. This thesis uses large-eddy simulation with the Advanced Research WRF model to study how the vertical structure and intensity of boundary-layer turbulence respond to increasing surface cooling, and how that response depends on mechanical forcing. Eight idealised simulations cross two geostrophic wind speeds (16.5 and 8.25 m/s) with four surface cooling rates (0, 0.25, 0.50 and 1.00 K/h). The strongly forced cases respond monotonically, consistent with the classical quasi-steady stable boundary layer. The weakly forced cases depart from that regime: the surface heat flux saturates near 10 W/m² despite a fourfold increase in imposed cooling, the surface friction velocity collapses, and the flow aloft decouples from the surface.",
+    "bibtex": {
+      "entryType": "mastersthesis",
+      "school": "University of Waterloo",
+      "address": "Waterloo, Ontario, Canada"
+    },
+    "status": "in preparation",
+    "note": "Not yet deposited. Set \"status\": \"published\" and point \"pdf\" at the file in assets/files/ once it is public in UWSpace."
+  },
+  {
+    "id": "makanga2023obstacle",
+    "type": "journal",
+    "title": "Obstacle-induced lateral dispersion and nontrivial trapping of flexible fibers settling in a viscous fluid",
+    "authors": [
+      "Ursy Makanga",
+      "Mohammadreza Sepahi",
+      "Camille Duprat",
+      "Blaise Delmotte"
+    ],
+    "venue": "Physical Review Fluids",
+    "volume": "8",
+    "number": "4",
+    "pages": "044303",
+    "year": 2023,
+    "doi": "10.1103/PhysRevFluids.8.044303",
+    "pdf": "",
+    "links": [],
+    "tags": [
+      "Flexible fibers",
+      "Sedimentation",
+      "Low Reynolds number"
+    ],
+    "abstract": "We study the sedimentation of flexible fibers through arrays of obstacles in a viscous fluid, combining experiments and numerical simulations. Obstacles induce lateral dispersion of the fibers and, depending on fiber flexibility and obstacle geometry, non-trivial trapping states.",
+    "bibtex": {
+      "entryType": "article",
+      "journal": "Physical Review Fluids",
+      "publisher": "American Physical Society"
+    },
+    "status": "published"
+  },
+  {
+    "id": "makanga2023siam",
+    "type": "conference",
+    "title": "Sedimentation of Flexible Fibers in Structured Environments",
+    "authors": [
+      "Ursy Makanga",
+      "Mohammadreza Sepahi",
+      "Camille Duprat",
+      "Blaise Delmotte"
+    ],
+    "venue": "SIAM Conference on Computational Science and Engineering (CSE23)",
+    "year": 2023,
+    "pdf": "",
+    "links": [
+      {
+        "label": "HAL record",
+        "url": "https://hal.science/hal-04438332"
+      }
+    ],
+    "tags": [
+      "Flexible fibers",
+      "Sedimentation"
+    ],
+    "abstract": "",
+    "bibtex": {
+      "entryType": "inproceedings",
+      "booktitle": "SIAM Conference on Computational Science and Engineering"
+    },
+    "status": "published"
+  },
+  {
+    "id": "duprat2022apsdfd",
+    "type": "conference",
+    "title": "Sedimenting flexible fibers against obstacles in a viscous fluid",
+    "authors": [
+      "Camille Duprat",
+      "Ursy Makanga",
+      "Mohammadreza Sepahi",
+      "Blaise Delmotte"
+    ],
+    "venue": "75th Annual Meeting of the APS Division of Fluid Dynamics, Bulletin of the American Physical Society",
+    "year": 2022,
+    "pdf": "",
+    "links": [
+      {
+        "label": "APS abstract",
+        "url": "https://meetings.aps.org/Meeting/DFD22/Session/U26.10"
+      },
+      {
+        "label": "HAL record",
+        "url": "https://hal.science/hal-04574057/"
+      }
+    ],
+    "tags": [
+      "Flexible fibers",
+      "Sedimentation"
+    ],
+    "abstract": "",
+    "bibtex": {
+      "entryType": "inproceedings",
+      "booktitle": "Bulletin of the American Physical Society, 75th Annual Meeting of the Division of Fluid Dynamics"
+    },
+    "status": "published"
+  }
+]

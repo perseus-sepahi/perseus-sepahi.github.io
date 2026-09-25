@@ -1,0 +1,28 @@
+{
+  "headline": "I build native Mac, iPhone and Apple Watch apps, and I study turbulence in the atmosphere.",
+  "bio": [
+    "I am a Master of Mathematics student in Applied Mathematics (Fluid Mechanics Group) at the University of Waterloo. My thesis uses large-eddy simulation with WRF to study how the stable nocturnal boundary layer responds to surface cooling and wind forcing.",
+    "Before Waterloo I completed an M.Sc. in Mechanical Engineering at Amirkabir University of Technology and spent a summer at LadHyX (École Polytechnique) working on flexible fibers sedimenting in viscous fluids, which led to a paper in Physical Review Fluids.",
+    "On the software side I write Swift apps for macOS, iOS and watchOS, plus a text-to-CAD tool that drives OpenFOAM. Everything I publish here is free."
+  ],
+  "interests": [
+    "Fluid dynamics (numerical, experimental, and machine learning)",
+    "Atmospheric boundary layers and large-eddy simulation",
+    "Wind energy and offshore wind turbines",
+    "Physical oceanography and climate dynamics",
+    "Native Apple platform development"
+  ],
+  "skills": [
+    "Swift / SwiftUI",
+    "Python",
+    "MATLAB",
+    "WRF",
+    "OpenFOAM",
+    "COMSOL",
+    "LaTeX",
+    "Linux shell",
+    "Machine learning"
+  ],
+  "featuredSoftware": [],
+  "nowText": "Finishing my M.Math thesis on the stable atmospheric boundary layer, and preparing the first public release of Chisel."
+}

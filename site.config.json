@@ -1,0 +1,27 @@
+{
+  "title": "Perseus Sepahi",
+  "tagline": "Applied mathematician and app developer — fluid dynamics, atmospheric LES, and native Apple software.",
+  "description": "Personal site of Perseus (Mohammadreza) Sepahi: software, apps, and research papers on fluid dynamics and boundary-layer turbulence.",
+  "url": "https://perseus-sepahi.github.io",
+  "basePath": "",
+  "customDomain": "",
+  "language": "en",
+  "author": {
+    "name": "Perseus Sepahi",
+    "legalName": "Mohammadreza Sepahi",
+    "email": "perseus.sepahi@uwaterloo.ca",
+    "affiliation": "University of Waterloo",
+    "location": "Waterloo, Ontario, Canada",
+    "department": "Applied Mathematics"
+  },
+  "links": {
+    "github": "https://github.com/perseus-sepahi",
+    "scholar": "https://scholar.google.com/citations?user=IthUn3IAAAAJ&hl=en",
+    "linkedin": "https://ca.linkedin.com/in/william-sepahi",
+    "researchgate": "https://www.researchgate.net/profile/Mohammadreza-Sepahi",
+    "orcid": ""
+  },
+  "analytics": {
+    "plausibleDomain": ""
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "kinoglot",
+  "name": "Kinoglot",
+  "tagline": "A video player that plays almost anything, and makes subtitles for the videos that have none.",
+  "icon": "assets/icons/kinoglot.png",
+  "iconShape": "macos",
+  "platforms": [
+    "macOS"
+  ],
+  "status": "beta",
+  "order": 1,
+  "tags": [
+    "video",
+    "subtitles",
+    "translation",
+    "speech recognition",
+    "Persian"
+  ],
+  "tech": [
+    "Swift",
+    "SwiftUI",
+    "FFmpeg",
+    "whisper.cpp",
+    "Metal",
+    "StoreKit"
+  ],
+  "year": 2026,
+  "description": "Kinoglot plays MKV, MP4, AVI, WebM and dozens of other formats with hardware decoding up to 8K, and turns speech into subtitles with Whisper running on your Mac. Subtitles can be translated into 46 languages, free and private through Ollama or with your own OpenAI, Claude or Gemini key.\n\nThe player is free. AI subtitles are free for your first 2 hours of watching; Kinoglot Pro unlocks them for good with a one-time purchase.",
+  "features": [
+    "Plays almost every video and audio format, with hardware decoding up to **8K at 60 fps**",
+    "**AI subtitles** made on your Mac with Whisper, starting at the part you're watching",
+    "**Translation into 46 languages**, free with Ollama or with your own API key",
+    "Dual subtitles and a searchable live transcript: click a line to jump there",
+    "Every subtitle format, with automatic fixes for garbled Persian and Arabic files",
+    "Liquid Glass design, Picture in Picture, seek-bar previews, playlists and chapters"
+  ],
+  "downloads": [
+    {
+      "label": "Mac App Store",
+      "url": "",
+      "note": "macOS 26 or later, Apple silicon · Pro is an in-app purchase through Apple"
+    }
+  ],
+  "links": [],
+  "screenshots": [],
+  "releases": ""
+}
