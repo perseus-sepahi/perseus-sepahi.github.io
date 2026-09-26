@@ -137,7 +137,7 @@ function pageSoftwareIndex() {
   <p class="kicker reveal">${software.length ? `${software.length} app${software.length === 1 ? '' : 's'} <span class="sep" aria-hidden="true">/</span> Free to use` : 'Catalogue'}</p>
   <h1 class="title reveal" style="--d:1">Software</h1>
   <div class="head-body">
-    <p class="lede reveal" style="--d:2">Apps for Mac, iPhone, Apple Watch and Android, and tools for engineering simulation. Every one is free to use; the source code stays private.</p>
+    <p class="lede reveal" style="--d:2">Apps for Mac, iPhone, Apple Watch and Android, and tools for engineering simulation. Every one is free to use.</p>
     ${software.length ? `<div class="filters reveal" style="--d:3" role="group" aria-label="Filter by platform" data-filter-group>
       ${filter('all', 'All', software.length, true)}
       ${platforms.map(p => filter(p, p, counts.get(p), false)).join('')}
@@ -457,7 +457,7 @@ ${plausible}
     <p class="colophon-name">${esc(config.author.name)}</p>
     <div>
       <p class="links">${profileLinks()}<a href="${url('feed.xml')}">RSS</a></p>
-      <p class="colophon-note">© ${NOW.getFullYear()} ${esc(config.author.name)}. The apps are free to use and their source is private. Set in Newsreader and IBM Plex, generated from plain JSON by a small Node script, and hosted on GitHub Pages.</p>
+      <p class="colophon-note">© ${NOW.getFullYear()} ${esc(config.author.name)}. The apps are free to use. Set in Newsreader and IBM Plex, generated from plain JSON by a small Node script, and hosted on GitHub Pages.</p>
     </div>
   </div>
 </footer>

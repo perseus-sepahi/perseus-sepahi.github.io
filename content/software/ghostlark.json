@@ -1,0 +1,62 @@
+{
+  "slug": "ghostlark",
+  "name": "Ghostlark",
+  "tagline": "A free, open-source VPN hub for people on restricted networks.",
+  "icon": "assets/icons/ghostlark.png",
+  "iconShape": "macos",
+  "platforms": [
+    "macOS",
+    "Android"
+  ],
+  "status": "beta",
+  "order": 2,
+  "tags": [
+    "VPN",
+    "privacy",
+    "anti-censorship",
+    "internet freedom",
+    "open source"
+  ],
+  "tech": [
+    "Swift",
+    "SwiftUI",
+    "Kotlin",
+    "Jetpack Compose",
+    "sing-box"
+  ],
+  "year": 2026,
+  "description": "Ghostlark finds free public proxy servers, rates how much protection each one really gives, checks which ones work right now, and connects your Mac or Android phone through the best one with a single tap.\n\nIt is built for restricted networks: its stealth modes make traffic look like ordinary HTTPS, and Shield mode runs an encrypted Cloudflare WARP tunnel inside the proxy so the server operator sees only ciphertext. Ghostlark is free, has no accounts and no tracking, and its source code is public under the GPLv3.",
+  "features": [
+    "**One tap to connect**: finds, tests and picks the best working server for you",
+    "**Security and stealth rating** for every server; unsafe plaintext servers are hidden",
+    "**Stealth** and **Extra Stealth** modes that look like ordinary HTTPS traffic",
+    "**Shield**: a Cloudflare WARP tunnel inside the proxy, so the operator sees only ciphertext",
+    "Verified before use, automatic failover, and DNS kept inside the tunnel",
+    "Mac app signed and notarized by Apple; free and open source (GPLv3)"
+  ],
+  "downloads": [
+    {
+      "label": "Download for Mac",
+      "url": "https://github.com/perseus-sepahi/ghostlark/releases/latest/download/Ghostlark-mac.zip",
+      "note": "macOS 14 or later, Apple silicon · signed and notarized"
+    },
+    {
+      "label": "Download for Android",
+      "url": "https://github.com/perseus-sepahi/ghostlark/releases/latest/download/Ghostlark.apk",
+      "note": "Android 8 or later · open the APK and allow installing from this source"
+    }
+  ],
+  "links": [
+    {
+      "label": "Source code on GitHub",
+      "url": "https://github.com/perseus-sepahi/ghostlark"
+    },
+    {
+      "label": "Support the project",
+      "url": "https://github.com/sponsors/perseus-sepahi"
+    }
+  ],
+  "screenshots": [],
+  "releases": "perseus-sepahi/ghostlark",
+  "githubRepo": "perseus-sepahi/ghostlark"
+}
